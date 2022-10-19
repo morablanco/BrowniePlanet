@@ -4,11 +4,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
+    <link rel="shortcut icon" href="fotos/brownieplanet12.png">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
     </head>
 <body>
+
+
 
 
         
@@ -17,17 +22,16 @@
         </div>
         <div id="logotipo">
             <a href="index.html">
-            <img src="fotos/brownieplanet11.png " width="100px" height="34px"
+            <img src="fotos/brownieplanet11.png" width="100px" height="34px"
             alt="Haz clic aquí para volver a la página de inicio">
             </a>
         <a href="nosotros.html" >NOSOTROS</a>
         <a href="https://www.google.com/maps/search/brownie+planet/@-34.5805482,-58.4355065,14z/data=!4m8!2m7!3m6!1sbrownie+planet!2sBrownie+Planet,+Darregueyra+2191,+C1425+CABA!3s0x95bcb59e5f2d2ad5:0x3b775647ef951a6e!4m2!1d-58.4264016!2d-34.5833074">SUCURSALES</a>
         <a href="Takeaway.html">TAKE AWAY </a>
         <a href="INICIARSESION.HTML">INICIAR SESIÓN</a>
-        <a href="REGISTRATE.HTML">REGISTRATE</a>
         <a href="MENU.HTML">MENÚ</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        
+          
         </a>
       </div>
       
@@ -46,21 +50,79 @@
       </script>
       
 
+      
+      <title>INICIAR SESIÓN</title> 
+    </title>
   
-<form> 
+    
+    <div class="overlay">
+      <!-- LOGN IN FORM by Omar Dsoky -->
+      <form>
+         <!--   con = Container  for items in the form-->
+         <div class="con">
+         <!--     Start  header Content  -->
+         <header class="head-form">
+            <h2>INICIAR SESIÓN </h2>
+            <!--     A welcome message or an explanation of the login form -->
+            <p>Ingresá usando tu nombre de usuario y contraseña</p>
+         </header>
+         <!--     End  header Content  -->
+         <br>
+         <div class="field-set">
+           
+            <!--   user name -->
+               <span class="input-item">
+                 <i class="fa fa-user-circle"></i>
+               </span>
+              <!--   user name Input-->
+               <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+           
+            <br>
+           
+                 <!--   Password -->
+           
+            <span class="input-item">
+              <i class="fa fa-key"></i>
+             </span>
+            <!--   Password Input-->
+            <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+           
+      <!--      Show/hide password  -->
+           <span>
+              <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+           </span>
+           
+           
+            <br>
+      <!--        buttons -->
+      <!--      button LogIn -->
+            <button class="log-in"> Ingresar </button>
+         </div>
+        
+      <!--   other buttons -->
+         <div class="other">
+      <!--      Forgot Password button-->
+            <button class="btn submits frgt-pass">Olvidé mi contraseña</button>
+      <!--     Sign Up button -->
+            <button class="btn submits sign-up"> <a href="REGISTRATE.HTML">REGISTRATE</a>
+      <!--         Sign Up font icon -->
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </button>
+      <!--      End Other the Division -->
+         </div>
+           
+      <!--   End Conrainer  -->
+        </div>
+        
+        <!-- End Form -->
+      </form>
+      </div>
+  
+      </div>
+</body>
 
-
-    <label for="fname">Email: </label><br>
-    <input type="text" id="fname" name="fname"><br>
-
-    <label for="fname">Contraseña: </label><br>
-    <input type="text" id="fname" name="fname"><br>
-
-</form>
-
-</nav>
 <article>
-  <footer> 
+  <footer style=" bottom: 0; width: 100%;"> 
     <ul>
    
        <li>Sucursal Palermo: Darregueyra 2191
@@ -70,9 +132,9 @@
        <li> Seguinos en Instagram <a href="https://www.instagram.com/brownieplanet.arg/"> @brownieplanet.arg</a></li>
     </ul>
 </footer>
-  
+</article>
 
 
 
-</body>
+
 </html>

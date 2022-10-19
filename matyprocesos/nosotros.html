@@ -4,11 +4,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
-
+    <link rel="shortcut icon" href="fotos/brownieplanet12.png">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
 <body>
+
+
 
 
         
@@ -17,17 +24,16 @@
         </div>
         <div id="logotipo">
             <a href="index.html">
-            <img src="fotos/brownieplanet11.png " width="100px" height="34px"
+            <img src="fotos/brownieplanet11.png" width="100px" height="34px"
             alt="Haz clic aquí para volver a la página de inicio">
             </a>
         <a href="nosotros.html" >NOSOTROS</a>
         <a href="https://www.google.com/maps/search/brownie+planet/@-34.5805482,-58.4355065,14z/data=!4m8!2m7!3m6!1sbrownie+planet!2sBrownie+Planet,+Darregueyra+2191,+C1425+CABA!3s0x95bcb59e5f2d2ad5:0x3b775647ef951a6e!4m2!1d-58.4264016!2d-34.5833074">SUCURSALES</a>
         <a href="Takeaway.html">TAKE AWAY </a>
         <a href="INICIARSESION.HTML">INICIAR SESIÓN</a>
-        <a href="REGISTRATE.HTML">REGISTRATE</a>
         <a href="MENU.HTML">MENÚ</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        
+          
         </a>
       </div>
       
@@ -46,74 +52,85 @@
       </script>
       
 
-    
 
 
-
-    <title>titulo del documento</title> 
+    <title>BROWNIEPLANET</title> 
 </title>
 
 
-
+<div class="TITULONOSOTROS">
+  <h1> CONOCENOS</h1>
+</div>
 
 <nav>
     <body>
-      <div class="caja1"> 
-        <ul>
-        <li>
+      <div class="caja2" > 
+        <ul   ullist-style-type: :none> 
             ¡BIENVENIDO A LA EXPERIENCIA BROWNIE PLANET!
-        </li>
-        <li>
+   <ul   ullist-style-type: :none> 
             BROWNIE PLANET 
             Es un emprendimiento que nació como una propuesta de cookies americanas recién horneadas. Desde la marca brindamos una experiencia diferencial a sus consumidores siendo un espacio divertido, alegre y creativo. 
             Esta es una experiencia más que una cookie. 
             Somos un médico clínico y una publicista que hace 3 años motivados por el deseo de conseguir unas cookies con características especiales. Por esa razón, decidimos aventurarnos a crear nuestra propia receta, y al ver que era para nosotros increíble, decidimos compartir esta experiencia con nuestros compañeros de trabajo.
-            
+  <ul   ullist-style-type: :none>         
             Somos Jorge Salazar y Laura Lozano, creadores de la marca.
-        </li>
+       
     </ul>
   </div>
 
 
 
-  <div class="caja"> 
-    <ul>
+  
+
+  
+
+  <h2>PREGUNTAS FRECUENTES</h2>
+
+  <button class="accordion"> ¿Cuán importante es la calidad y el servicio a la hora de ofrecer un producto?  </button>
+  <div class="panel">
+    <p>Creemos que son los puntos más importantes, ya que todos los días nos esforzamos por brindar una experiencia de la misma manera como nos gustaría obtener un producto, siempre pensando en el consumidor.</p>
+  </div>
+  
+  <button class="accordion">¿Cuáles son las modalidades de venta y envío?</button>
+  <div class="panel">
+    <p>  El local es take away donde siempre van a encontrar cookies recién horneadas, tenemos delivery propio por el momento en ciertas zonas de CABA y por aplicación de Rappi.</p>
+  </div>
+  
+  <button class="accordion"> ¿Que han aprendido en este tiempo de profesión?</button>
+  <div class="panel">
+    <p>No somo pasteleros, somos autodidactas. Todo ha sido un reto para nosotros desde la producción, logística, administración y organización interna. Siendo extranjeros sin familia y pocos amigos nos arriesgamos para hacer los que realmente nos apasiona, cada día es un nuevo reto no llegamos a imaginar la acogida y el cariño que nos brindaría los Cookie Lovers.</p>
+  </div>
+
+  <button class="accordion"> ¿Qué es lo que se viene en la empresa? ¿Como se ven en el futuro? </button>
+    <div class="panel">
+      <p> Ser la empresa de cookies recien horneadas más grande del país, representar a la Argentina en el rublo de las cookies a todo Sur América y el mundo. </p>
+    </div>
     
-        PREGUNTAS FRECUENTES
  
-    <li>
-      ¿Cuán importante es la calidad y el servicio a la hora de ofrecer un producto?  
-    
-    </li>
   
-      Creemos que son los puntos más importantes, ya que todos los días nos esforzamos por brindar una experiencia de la misma manera como nos gustaría obtener un producto, siempre pensando en el consumidor.
-
-    <li>
-      ¿Cuáles son las modalidades de venta y envío?
-   
-      El local es take away donde siempre van a encontrar cookies recién horneadas, tenemos delivery propio por el momento en ciertas zonas de CABA y por aplicación de Rappi.
-      <li>
-      
-       
-      ¿Que han aprendido en este tiempo de profesión?
-    
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
 
   
-      No somo pasteleros, somos autodidactas. Todo ha sido un reto para nosotros desde la producción, logística, administración y organización interna. Siendo extranjeros sin familia y pocos amigos nos arriesgamos para hacer los que realmente nos apasiona, cada día es un nuevo reto no llegamos a imaginar la acogida y el cariño que nos brindaría los Cookie Lovers.
-    
-    </li>
-    
-      ¿Qué es lo que se viene en la empresa? ¿Como se ven en el futuro?
-      
-      Ser la empresa de cookies recien horneadas más grande del país, representar a la Argentina en el rublo de las cookies a todo Sur América y el mundo.
-    </li>
-</ul>
-</div>
-</nav>
+
 </body>
 
-<article>
-  <footer> 
+
+  <footer style=" bottom: 0; width: 100%;"> 
     <ul>
    
        <li>Sucursal Palermo: Darregueyra 2191
