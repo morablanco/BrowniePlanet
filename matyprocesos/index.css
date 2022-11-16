@@ -94,7 +94,7 @@ background-color: #93E5F7;
   }
   /*  */ 
   form{
-    background-color: #edeff2;
+
     text-align: left;
   }
 
@@ -171,10 +171,10 @@ background-color: #93E5F7;
     font-weight: 400;
     color: #090909;
     background: #00D8F9;
-    margin: 0 0 50px;
+    margin: 0 0 25px;
     overflow: hidden;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
    
     }
     .caja2 {
@@ -186,16 +186,28 @@ background-color: #93E5F7;
       margin: 0 0 25px;
       margin-top: 25px;
       overflow: hidden;
-      margin-left: 15px;
-    margin-right: 15px;
+      margin-left: 25px;
+    margin-right: 25px;
      
       }
   
- 
+      .caja3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #090909;
+        background: #00D8F9;
+        margin: 0 0 25px;
+        overflow: hidden;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+
     /* FOOTER */
     /* si algo no funciona cambiar position a stiky */
     footer {
-      position: static;
+      position: relative;
       margin-top: 100px;
       bottom: 0;
       font-family: 'Fira Sans', sans-serif, 400;
@@ -219,7 +231,7 @@ background-color: #93E5F7;
 
 .column-2.carta{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(1,1fr);
   column-gap: 1rem;
   row-gap: 1rem;
   margin-bottom: 15px;
@@ -283,179 +295,19 @@ background-color: #93E5F7;
 }
 
 .panel {
-  padding: 0px ;
+  padding: 0 18px;
   display: none;
-  background-color: linear-gradient(to top, #7bcde0 0%, #45b4b445 100%) ;
+  background-color: #7bcde0;
   overflow: hidden;
-  margin-left: 10px;
-  margin-right: 10px;
 }
-
 
 /* |||||||||||||||||||||||||||||||||||||||||||||*/
+ul {list-style-type:none;}
 /* //////////////////////////////////////////// */
 
 
-/* Start form  attributes */
-form {
-    width: 450px;
-    min-height: 500px;
-    height: auto;
-    border-radius: 5px;
-    margin: 2% auto;
-    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
-    padding: 2%;
-    background-image: linear-gradient(-225deg, #d5ece5 50%, #88e3f8 50%);
-}
-/* form Container */
-form .con {
-    display: -webkit-flex;
-    display: flex;
-  
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-  
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-  
-      margin: 0 auto;
-}
 
-/* the header form form */
-header {
-    margin: 2% auto 10% auto;
-    text-align: center;
-}
-/* Login title form form */
-header h2 {
-    font-size: 250%;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #3e403f;
-}
-/*  A welcome message or an explanation of the login form */
-header p {letter-spacing: 0.05em;}
-
-
-
-/* //////////////////////////////////////////// */
-/* //////////////////////////////////////////// */
-
-
-.input-item {
-    background: #fff;
-    color: #333;
-    padding: 14.5px 0px 15px 9px;
-    border-radius: 5px 0px 0px 5px;
-}
-
-
-
-/* Show/hide password Font Icon */
-#eye {
-    background: #fff;
-    color: #333;
-  
-    margin: 5.9px 0 0 0;
-    margin-left: -20px;
-    padding: 15px 9px 19px 0px;
-    border-radius: 0px 5px 5px 0px;
-  
-    float: right;
-    position: relative;
-    right: 1%;
-    top: -.2%;
-    z-index: 5;
-    
-    cursor: pointer;
-}
-/* inputs form  */
-input[class="form-input"]{
-    width: 240px;
-    height: 50px;
-  
-    margin-top: 2%;
-    padding: 15px;
-    
-    font-size: 16px;
-    font-family: 'Abel', sans-serif;
-    color: #5E6472;
-  
-    outline: none;
-    border: none;
-  
-    border-radius: 0px 5px 5px 0px;
-    transition: 0.2s linear;
-    
-}
-input[id="txt-input"] {width: 250px;}
-/* focus  */
-input:focus {
-    transform: translateX(-2px);
-    border-radius: 5px;
-}
-
-/* //////////////////////////////////////////// */
-/* //////////////////////////////////////////// */
-
-/* input[type="text"] {min-width: 250px;} */
-/* buttons  */
-button {
-    display: inline-block;
-    color: #252537;
-  
-    width: 280px;
-    height: 50px;
-  
-    padding: 0 20px;
-    background: #fff;
-    border-radius: 5px;
-    
-    outline: none;
-    border: none;
-  
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.2s linear;
-    
-    margin: 7% auto;
-    letter-spacing: 0.05em;
-}
-/* Submits */
-.submits {
-    width: 48%;
-    display: inline-block;
-    
-    margin-left: 2%;
-}
-
-/*       Forgot Password button FAF3DD  */
-.frgt-pass {background: transparent;}
-
-/*     Sign Up button  */
-.sign-up {background: #8f8f90;}
-
-
-/* buttons hover */
-button:hover {
-    transform: translatey(3px);
-    box-shadow: none;
-}
-
-/* buttons hover Animation */
-button:hover {
-    animation: ani9 0.4s ease-in-out infinite alternate;
-}
-@keyframes ani9 {
-    0% {
-        transform: translateY(3px);
-    }
-    100% {
-        transform: translateY(5px);
-    }
-}
-
-
-
+/* TOPNAV */
 .topnav {
   position: relative;
   overflow: hidden;
@@ -494,6 +346,182 @@ button:hover {
   float: right;
 }
 
+
+
+
+
+
+/* PRUEBA PARA ESTILO DE INICIAR SESION  */
+
+
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: absolute;
+  z-index: 1;
+ 
+  background: #FFD836;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+
+/* PRUEBA PARA CSS DE REGISTRATE */
+
+* {
+  box-sizing: border-box;
+  
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: #FFD836;
+ 
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  
+}
+
+.registerbtn:hover {
+  opacity: 1;
+  
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/***********************************************************/
+
+/***********************************************************/
+
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
   .topnav a, .topnav-right {
@@ -529,5 +557,16 @@ button:hover {
 	#columna1, #columna2, #columna3 {
 	float:left;
 	width:33%;
+}
+}
+
+@media (min-width:450px) {
+  .footer{
+float: none;
+justify-content:space-around ;
+flex-direction: row;
+margin-top: 10px;
+margin-bottom: 20px;
+
 }
 }
